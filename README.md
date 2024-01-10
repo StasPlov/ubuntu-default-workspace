@@ -1,3 +1,5 @@
+[![License](http://poser.pugx.org/stas-plov/dto-validator-bundle/license)](https://packagist.org/packages/stas-plov/dto-validator-bundle) 
+
 # ubuntu-default-workspace
 ### Generate default workspace in ubuntu
 

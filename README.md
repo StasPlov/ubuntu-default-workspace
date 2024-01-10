@@ -8,3 +8,8 @@
 * docker
 * composer
 * make
+
+# How to Use
+```
+./wrokspace_init.sh
+```

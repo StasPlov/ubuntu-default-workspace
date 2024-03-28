@@ -11,5 +11,5 @@
 
 # How to Use
 ```
-./wrokspace_init.sh
+./woekspace_init.sh
 ```

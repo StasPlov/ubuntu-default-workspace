@@ -33,6 +33,7 @@ sudo apt-get update    # Обновление списка пакетов для
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 sudo usermod -aG docker $USER  # Добавление текущего пользователя в группу Docker для выполнения команд без sudo
+sudo usermod -aG root $USER  # Добавление текущего пользователя в группу root
 
 # Установка Composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"

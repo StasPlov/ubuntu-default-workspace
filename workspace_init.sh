@@ -7,7 +7,7 @@ sudo apt-get update -y
 sudo apt-get install -y build-essential snapd
 
 # Установка основных certbot для сертификатов
-sudo snap install -y --classic certbot
+sudo snap install --classic certbot
 
 # Установка PHP (будут установлены обе версии: 7.4 и 8.2)
 # Для использования репозиториев с последними версиями PHP

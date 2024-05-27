@@ -3,7 +3,7 @@
 # ubuntu-default-workspace
 ### Generate default workspace in ubuntu
 
-* php 8.2/7.4 (No apache2)
+* php 7.4/8.2/8.3 (No apache2) + php-xml + php-redis
 * nginx
 * docker
 * composer

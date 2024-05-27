@@ -9,6 +9,8 @@
 * composer
 * make
 * NVIDIA Container Toolkit
+* snapd
+* certbot
 
 # How to Use
 ```

@@ -3,8 +3,11 @@
 # Обновление списка пакетов
 sudo apt-get update -y
 
-# Установка основных инструментов для разработки, включая 'make'
-sudo apt-get install -y build-essential
+# Установка основных инструментов для разработки, включая 'make' и 'snapd'
+sudo apt-get install -y build-essential snapd
+
+# Установка основных certbot для сертификатов
+sudo snap install -y --classic certbot
 
 # Установка PHP (будут установлены обе версии: 7.4 и 8.2)
 # Для использования репозиториев с последними версиями PHP

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Обновление списка пакетов
-sudo -y apt-get update
+sudo apt-get update -y
 
 # Установка основных инструментов для разработки, включая 'make'
 sudo apt-get install -y build-essential
@@ -12,7 +12,7 @@ sudo apt-get install -y software-properties-common
 sudo add-apt-repository -y ppa:ondrej/php
 
 # Обновление списка пакетов (сюда добавляются новые из ppa:ondrej/php)
-sudo -y apt-get update
+sudo apt-get update -y
 
 # Установка PHP 7.4, PHP 8.2 и PHP 8.3 (без Apache2) с необходимыми расширениями + php-redis
 sudo apt-get install -y php7.4-cli php7.4-fpm php7.4-mysql php7.4-curl php7.4-xml
@@ -30,7 +30,7 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-sudo -y apt-get update    # Обновление списка пакетов для добавления репозитория Docker
+sudo apt-get update -y   # Обновление списка пакетов для добавления репозитория Docker
 
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
@@ -50,7 +50,7 @@ curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dear
     sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
     sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
     
-sudo -y apt-get update
+sudo apt-get update -y
 sudo apt-get install -y nvidia-container-toolkit
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo service docker restart

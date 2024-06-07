@@ -14,7 +14,7 @@
 
 # How to Use
 ```
-./woekspace_init.sh
+./workspace_init.sh
 ```
 ## 💖 Support
 

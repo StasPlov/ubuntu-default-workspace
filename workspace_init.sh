@@ -18,9 +18,9 @@ sudo add-apt-repository -y ppa:ondrej/php
 sudo apt-get update -y
 
 # Установка PHP 7.4, PHP 8.2 и PHP 8.3 (без Apache2) с необходимыми расширениями + php-redis
-sudo apt-get install -y php7.4-cli php7.4-fpm php7.4-mysql php7.4-curl php7.4-xml
-sudo apt-get install -y php8.2-cli php8.2-fpm php8.2-mysql php8.2-curl php8.2-xml
-sudo apt-get install -y php8.3-cli php8.3-fpm php8.3-mysql php8.3-curl php8.3-xml
+sudo apt-get install -y php7.4-cli php7.4-fpm php7.4-mysql php7.4-curl php7.4-xml php7.4-intl
+sudo apt-get install -y php8.2-cli php8.2-fpm php8.2-mysql php8.2-curl php8.2-xml php8.2-intl
+sudo apt-get install -y php8.3-cli php8.3-fpm php8.3-mysql php8.3-curl php8.3-xml php8.3-intl
 sudo apt-get install -y php-redis php-xml
 
 # Установка Nginx

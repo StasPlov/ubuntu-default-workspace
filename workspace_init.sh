@@ -58,4 +58,4 @@ sudo apt-get install -y nvidia-container-toolkit
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo service docker restart
 
-echo 'Restart the session to apply the changes to the user's groups.'
+echo 'Restart the session to apply the changes to the users groups.'
